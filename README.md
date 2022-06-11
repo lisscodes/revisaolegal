@@ -41,3 +41,21 @@ ng g c "nome do componente"
 
 >**Dicas de formulário...**
 sempre criar os labels e inputs dentro de uma TAG form, pra funcionar o "enter" no botão de login, por exemplo
+
+<hr>
+
+### Criação das Services e Models
+
+> A criação das models será feita de forma manual, criando dentro da pasta APP, uma pasta de model, e criando os arquivos para cada uma das models do Backend, com a extensão .ts
+> `Usuario.ts` por exemplo.
+
+Ao criar as models, sempre criar com o padrão:
+``` 
+export class "Nome da model" {
+	public "atributo": "tipo"
+}
+```
+Na hora de configurar a service, será necessário adicionar o HttpClientModule dentro do `app.module.ts`, conforme a documentação do Angular:
+
+[Documentação oficial do HTTP no Angular](https://angular.io/guide/http)
+
