@@ -1,0 +1,6 @@
+#imgBg{
+  background-image: url('../../assets/cadastro.jpg');
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
