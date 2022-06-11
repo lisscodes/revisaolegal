@@ -1,27 +1,85 @@
-# RevisaoLegal
+# Criação do projeto:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+* ng new "nome do projeto"
 
-## Development server
+**primeira pergunta: Angular routing - dar um Yes** 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- selecionar o CSS mesmo nos estilos
 
-## Code scaffolding
+abrir a pasta do projeto no VSCode, abrir o arquivo `"package.json"` e ficar de olho nas `dependencies`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+rodar os comandos de instalação das dependencias:
+```npm install bootstrap
+npm install jquery
+npm install popper.js
+npm install ngx-bootstrap
+npm install ngx-order-pipe
+```
+trocar a versão do bootstrap: trocar o numero da versão no package.json para `4.5.3`, e rodar um **npm install** no terminal
 
-## Build
+colocar os caminhos do bootstrap/jquery/popper dentro do angular.json
+```"styles": [
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
+``` 
+pra testar, vai no app.component.html, apaga tudo que tem, e colocar um 
+`<h1 class="text-danger ml-5">testando</h1>`
+se ficar com o texto vermelho, e um pouco pra direita da tela, ta tudo certo.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* comando para criar novos componentes:
+```
+ng generate component "nome do componente"
+ou
+ng g c "nome do componente"
+ ```
 
-## Running unit tests
+>**Dicas de formulário...**
+sempre criar os labels e inputs dentro de uma TAG form, pra funcionar o "enter" no botão de login, por exemplo# Criação do projeto:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* ng new "nome do projeto"
 
-## Running end-to-end tests
+**primeira pergunta: Angular routing - dar um Yes** 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- selecionar o CSS mesmo nos estilos
 
-## Further help
+abrir a pasta do projeto no VSCode, abrir o arquivo `"package.json"` e ficar de olho nas `dependencies`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+rodar os comandos de instalação das dependencias:
+```npm install bootstrap
+npm install jquery
+npm install popper.js
+npm install ngx-bootstrap
+npm install ngx-order-pipe
+```
+trocar a versão do bootstrap: trocar o numero da versão no package.json para `4.5.3`, e rodar um **npm install** no terminal
+
+colocar os caminhos do bootstrap/jquery/popper dentro do angular.json
+```"styles": [
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
+``` 
+pra testar, vai no app.component.html, apaga tudo que tem, e colocar um 
+`<h1 class="text-danger ml-5">testando</h1>`
+se ficar com o texto vermelho, e um pouco pra direita da tela, ta tudo certo.
+
+* comando para criar novos componentes:
+```
+ng generate component "nome do componente"
+ou
+ng g c "nome do componente"
+ ```
+
+>**Dicas de formulário...**
+sempre criar os labels e inputs dentro de uma TAG form, pra funcionar o "enter" no botão de login, por exemplo
