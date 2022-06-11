@@ -15,7 +15,8 @@
     <h2>Temas cadastrados</h2>
 
     <ul>
-      <li *ngFor="let tema of listaTemas">{{tema.descricao}}</li>
+      <li *ngFor="let tema of listaTemas">{{tema.descricao}} <a [routerLink]="['/temaEdit', tema.id]" class="mr-3">Editar</a>
+        <a [routerLink]="['/temaDelete', tema.id]">Apagar</a> </li>
     </ul>
   </div>
 </div>
